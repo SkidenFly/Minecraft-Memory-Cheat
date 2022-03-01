@@ -72,7 +72,8 @@ void utils::client_check() {
             
             if (regions[0].find(string) != std::string::npos) {
                 found = true;
-
+		ext::other_client = true;
+		   
                 memory::calc_min_address = 0x10000000000;
                 memory::calc_max_address = 0xF0000000000;
             }
