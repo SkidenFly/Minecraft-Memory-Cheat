@@ -99,6 +99,8 @@ void address_calculator() {
             if (ext::other_client) memory::max_address = address + 251658240; //Pretty stupid but works :P
             
             else memory::max_address = address + mbi.RegionSize;
+	    
+	    break;
         }
 
     }
